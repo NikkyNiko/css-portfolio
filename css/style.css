@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+}
+.page-section {
+  margin-top: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(130, 107, 151);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li a {
+  display: flex;
+  padding: 15px 15px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: darkmagenta;
+}
+.active {
+  background-color: black;
+}
+
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-template-areas:
+  "about project1 project1 contact"
+  "about project2 project3 contact"
+  "about project4 project5 contact"
+  "footer footer footer footer";
+  }
+  
+  .portfolio1 { grid-area: project1; }
+  .portfolio2 { grid-area: project2; }
+  .portfolio3 { grid-area: project3; }
+  .portfolio4 { grid-area: project4; }
+  .portfolio5 { grid-area: project5; }
+  .about { grid-area: about; }
+  .footer { grid-area: footer; }
+  .contact { grid-area: contact; }
+
+.image1 {
+  background-color: rgba(255, 203, 143, 1);
+  width: 600px;
+  height: -webkit-fill-available;
+  
+}
+.image2 {
+  background-color: rgba(255, 203, 143, 1);
+  object-fit: fill;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+ 
+}
+.image3 {
+  background-color: rgba(255, 203, 143, 1);
+  object-fit: fill;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  
+}
+.image4 {
+  background-color: rgba(255, 203, 143, 1);
+  object-fit: fill;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+ 
+}
+.image5 {
+  background-color: rgba(255, 203, 143, 1);
+  object-fit: fill;
+  width: -webkit-fill-available; 
+  height: 324px;
+  
+}
+.portfolio1 {
+height: 300px;
+width: 300px;
+position: relative;
+text-align: center;
+color: white;
+}
+.portfolio2 {
+height: 300px;
+width: 300px;
+position: relative;
+text-align: center;
+color: white;
+}
+.portfolio3 {
+height: 300px;
+width: 300px;
+position: relative;
+text-align: center;
+color: white;
+}
+.portfolio4 {
+height: 300px;
+width: 300px;
+position: relative;
+text-align: center;
+color: white;
+}
+.portfolio5 {
+height: 300px;
+width: 300px;
+position: relative;
+text-align: center;
+color: white;
+}
+.coming-soon {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+#work {
+  text-align: center;
+}
